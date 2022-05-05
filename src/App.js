@@ -4,7 +4,7 @@ import { Layout, Menu } from 'antd';
 import StarCanvas from './StarfieldCanvas';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './screen.css';
-import { FacebookFilled, BookFilled, CalculatorFilled } from '@ant-design/icons';
+import {  BookFilled, CalculatorFilled } from '@ant-design/icons';
 
 import Graphical from './Calculate/Root of Equation/Graphical';
 import Bisection from './Calculate/Root of Equation/Bisection';
@@ -105,11 +105,7 @@ class App extends Component {
                   <Menu.Item key="menu_backward2h"><Link to="/backwardh2">Backward Divided-Differences O(h{<sup>2</sup>})</Link></Menu.Item>
                   <Menu.Item key="menu_central2h"><Link to="/centralh2">Central Divided-Differences O(h{<sup>4</sup>})</Link></Menu.Item>
                 </SubMenu>
-                <SubMenu key="de_submenu" title={<span>Ordinary Differential Equation</span>}>
-                  <Menu.Item key="menu_euler"><Link to="/euler">Euler's Method</Link></Menu.Item>
-                  <Menu.Item key="menu_heun"><Link to="/heun">Heun's Method</Link></Menu.Item>
-                  <Menu.Item key="menu_modifier"><Link to="/modifier-euler">Modifier Euler's Method</Link></Menu.Item>
-                </SubMenu>
+                
               </Menu>
             </Sider>
             <Layout style={{ padding: '0 24px 24px' }}>
